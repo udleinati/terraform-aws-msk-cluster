@@ -116,7 +116,6 @@ resource "aws_msk_cluster" "this" {
 
 
         provisioned_throughput {
-          enabled           = var.provisioned_volume_throughput == null ? false : true
           volume_throughput = var.provisioned_volume_throughput
         }
       }
